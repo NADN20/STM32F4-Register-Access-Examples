@@ -24,41 +24,41 @@ void GPIO_ClockEnable (unsigned int * gpio_x)
 
   if (gpio_x == GPIO_A)
   { 
-   *RCC_GPIO_clock |= (1<<0x00);
+   *RCC_GPIO_clock |= (1<<0x01);
   }
   else if (gpio_x == GPIO_B)
   {
-   *RCC_GPIO_clock |= (1<<0x01); 
+   *RCC_GPIO_clock |= (1<<0x02); 
   }
   else if (gpio_x == GPIO_C)
   {
-   *RCC_GPIO_clock |= (1<<0x02);
+   *RCC_GPIO_clock |= (1<<0x04);
   } 
   else if (gpio_x == GPIO_D)
   {
-   *RCC_GPIO_clock |= (1<<0x04);
+   *RCC_GPIO_clock |= (1<<0x08);
   }
   else if (gpio_x == GPIO_E)
   {
-   *RCC_GPIO_clock |= (1<<0x08);
+   *RCC_GPIO_clock |= (1<<0x10);
   }
   else if (gpio_x == GPIO_F)
   {
-   *RCC_GPIO_clock |= (1<<0x10);
+   *RCC_GPIO_clock |= (1<<0x20);
   }
   else if (gpio_x == GPIO_G)
   {
-   *RCC_GPIO_clock |= (1<<0x20);
+   *RCC_GPIO_clock |= (1<<0x40);
   }
   else if (gpio_x == GPIO_H)
   {
-   *RCC_GPIO_clock |= (1<<0x40);
+   *RCC_GPIO_clock |= (1<<0x80);
   }
    else
   {
      if(gpio_x == GPIO_I)       
      {  
-       *RCC_GPIO_clock |= (1<<0x80);
+       *RCC_GPIO_clock |= (1<<0x100);
      }              
   }
 }  
@@ -72,50 +72,50 @@ void GPIO_DeInit(unsigned int * gpio_x)
       
   if (gpio_x == GPIO_A)
   {
-   *RCC_GPIO_reset |=(1<<0x00);    
-   *RCC_GPIO_reset &=~(1<<0x00); 
+   *RCC_GPIO_reset |=(1<<0x01);    
+   *RCC_GPIO_reset &=~(1<<0x01); 
   }
   else if (gpio_x == GPIO_B)
   {
-   *RCC_GPIO_reset |=(1<<0x01);    
-   *RCC_GPIO_reset &=~(1<<0x01);
+   *RCC_GPIO_reset |=(1<<0x02);    
+   *RCC_GPIO_reset &=~(1<<0x02);
   }
   else if (gpio_x == GPIO_C)
   {
-   *RCC_GPIO_reset |=(1<<0x02);  
-   *RCC_GPIO_reset &=~(1<<0x02); 
+   *RCC_GPIO_reset |=(1<<0x04);  
+   *RCC_GPIO_reset &=~(1<<0x04); 
   }
   else if (gpio_x == GPIO_D)
   {
-   *RCC_GPIO_reset |=(1<<0x04);    
-   *RCC_GPIO_reset &=~(1<<0x04); 
+   *RCC_GPIO_reset |=(1<<0x08);    
+   *RCC_GPIO_reset &=~(1<<0x08); 
   }
   else if (gpio_x == GPIO_E)
   {
-   *RCC_GPIO_reset |=(1<<0x08);    
-   *RCC_GPIO_reset &=~(1<<0x08);
+   *RCC_GPIO_reset |=(1<<0x10);    
+   *RCC_GPIO_reset &=~(1<<0x10);
   }
   else if (gpio_x == GPIO_F)
-  {
-   *RCC_GPIO_reset |=(1<<0x10);    
-   *RCC_GPIO_reset &=~(1<<0x10); 
-  }
-  else if (gpio_x == GPIO_G)
   {
    *RCC_GPIO_reset |=(1<<0x20);    
    *RCC_GPIO_reset &=~(1<<0x20); 
   }
-  else if (gpio_x == GPIO_H)
+  else if (gpio_x == GPIO_G)
   {
    *RCC_GPIO_reset |=(1<<0x40);    
    *RCC_GPIO_reset &=~(1<<0x40); 
+  }
+  else if (gpio_x == GPIO_H)
+  {
+   *RCC_GPIO_reset |=(1<<0x80);    
+   *RCC_GPIO_reset &=~(1<<0x80); 
   }
   else
   {
     if(gpio_x == GPIO_I)
     {
-      *RCC_GPIO_reset |=(1<<0x80);    
-      *RCC_GPIO_reset &=~(1<<0x80); 
+      *RCC_GPIO_reset |=(1<<0x100);    
+      *RCC_GPIO_reset &=~(1<<0x100); 
     }
   }
 } 
