@@ -33,9 +33,8 @@ The primary goal of this code is not to illuminate an LED but to provide a compr
 - Design applications adhering to ANSI standards and basic MISRA rules.
 - Ensuring compliance with these standards maintains high code quality, readability, and safety.
 
-Voici comment ajouter cette section "Extra Credit" à votre fichier README.md sur GitHub :
 
-Extra Credit
+### .Extra Credit
 I have used IAR Embedded Workbench for Arm v6.0 as the IDE for this project because I find it ideal for debugging.
 To explore the project, follow this path:\Project\EWARM\IO-toggle --- and open the workspace.
 Through the debugging process, you will be able to understand data manipulation through memory and effectively test your code.
