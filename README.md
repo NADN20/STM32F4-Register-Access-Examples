@@ -37,7 +37,7 @@ The primary goal of this code is not to illuminate an LED but to provide a compr
 ### .Extra Credit
 - I have used IAR Embedded Workbench for Arm v6.0 as the IDE for this project because I find it ideal for debugging.
 - To explore the project, follow this path:\Project\EWARM\IO-toggle --- and open the workspace.
--Through the debugging process, you will be able to understand data manipulation through memory and effectively test your code.
+- Through the debugging process, you will be able to understand data manipulation through memory and effectively test your code.
 
 ## Conclusion:
 This repository not only provides practical examples for configuring GPIO pins on the STM32F4 but also serves as a comprehensive learning resource for developing drivers. By following this guide, you will gain valuable insights into microcontroller programming, register-level manipulation, and best practices in embedded systems development.
